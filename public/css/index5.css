@@ -1,0 +1,90 @@
+.slider-bg-5 {
+    background: rgba(0, 0, 0, 0) url(img1.png) repeat center center /cover;
+}
+.hedding_box p{
+    font-size: 25px;
+    line-height: 1.3;
+    font-weight: 300;
+    margin: 0;
+    color: #4a4a4a;
+}
+.hedding_box h1{
+	    color: #3b3b3b;
+}
+.solid_bdr{
+	    background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+    outline: 1px solid #fff;
+    outline-offset: 8px;
+    padding: 20px;
+}
+
+/*SERVICES_SEC*/
+.wedo-point {
+    border: 1px solid #c3c3c3;
+    padding:20px 21px 21px 0px;
+    float: left;
+}
+.wedo-point:hover{
+	border:1px solid #ffffff;
+}
+.wedo-point .icon-serv {
+    float: left;
+    text-align: center;
+    width: 64px;
+    font-size: 30px;
+    background: #ffffff;
+    line-height: 64px;
+    margin-right: 24px;
+    color: #717171;
+    margin-left: 0;
+    height: 64px;
+}
+.wedo-point .serv-poin {
+    width: calc(100% - 97px);
+    display: inline-block;
+    overflow: hidden;
+}
+.serv-poin h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+}
+
+.serv-poin p {
+    margin-bottom: 0px;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.wedo-point{
+		    padding: 20px 0px 21px 0px;
+	}
+	.serv-poin h3{
+		font-size: 13px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	.serv-poin h3{
+		font-size: 14px;
+	}
+}
+.align-items-center {
+    -webkit-box-align: center!important;
+    -webkit-align-items: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+}
+
+.d-flex {
+    display: -webkit-box!important;
+    display: -webkit-flex!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+
+
+
+
+
+

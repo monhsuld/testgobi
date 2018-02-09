@@ -11624,9 +11624,7 @@ iframe[name='google_conversion_frame'] {
 @font-face {
   font-family: "FontAwesome";
   font-weight: normal;
-  font-style: normal;
-  src: url("/skin/frontend/skywire/default/fonts/fontawesome-webfont.eot");
-  src: url("/skin/frontend/skywire/default/fonts/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("/skin/frontend/skywire/default/fonts/fontawesome-webfont.woff") format("woff"), url("/skin/frontend/skywire/default/fonts/fontawesome-webfont.ttf") format("truetype"), url("/skin/frontend/skywire/default/fonts/fontawesome-webfont.svg#FontAwesome") format("svg"); }
+  font-style: normal;}
 
 a {
   color: #08c;
@@ -12598,7 +12596,6 @@ a {
     border-top: none;
     text-transform: uppercase; }
     .accordion__heading--is-closed:after {
-      background-image: url("/skin/frontend/johnstons/default/images/svg-png/plus.png");
       background-position: left top;
       background-repeat: no-repeat;
       background-size: contain;
@@ -12611,7 +12608,6 @@ a {
     .accordion__heading--is-opened {
       background: none; }
       .accordion__heading--is-opened:after {
-        background-image: url("/skin/frontend/johnstons/default/images/svg-png/minus.png");
         background-position: left top;
         background-repeat: no-repeat;
         background-size: contain;
@@ -15272,9 +15268,6 @@ p.collection-homepage {
     cursor: pointer;
     position: relative; }
     .product-media__image-wrapper:after {
-      background: url("/skin/frontend/johnstons/default/images/svg-png/zoom-plus.png");
-      background: url("/skin/frontend/johnstons/default/images/svg-min/zoom-plus.svg"), -webkit-linear-gradient(transparent, transparent);
-      background: url("/skin/frontend/johnstons/default/images/svg-min/zoom-plus.svg"), linear-gradient(transparent, transparent);
       background-repeat: no-repeat;
       background-size: contain;
       bottom: 4%;
@@ -17401,7 +17394,6 @@ span.number {
 .stockistcontainer {
   position: relative;
   padding: 20px;
-  background: #fafafa url(/media/upload/stockistbg.jpg) no-repeat top left;
   border: 1px solid #d9d9d9;
   border-radius: 10px;
   height: 540px;

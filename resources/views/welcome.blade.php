@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0056)http://theembazaar.com/demo/eforest/wimo/html/index.html -->
 <html class="">
 
     @include('layouts.htmlheader')

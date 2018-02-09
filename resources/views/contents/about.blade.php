@@ -153,13 +153,13 @@
         <!--Team Member-->
         <div class="team-member col-md-3 col-sm-6 col-xs-12 mb-sm-30 mb-xs-30">
           <div class="inner-box">
-            <div class="image-box"> <img src="assets/images/team/team1.jpg" alt=""> 
+            <div class="image-box"> <img src="{{ asset('imgs/gobichashmereEr1.jpg') }}" alt=""> 
               <!--Overlay Box-->
               <div class="overlay-box"> 
                 <!--User Info-->
                 <div class="user-info">
-                  <div class="text"> Sales Manager </div>
-                  <h4>Tommy Wood</h4>
+                  <div class="text"> Гүйцэтгэх захирал </div>
+                  <h4>Болд</h4>
                 </div>
                 <!--Social Icon Two-->
                 <ul class="social-icon-two">
@@ -173,13 +173,13 @@
         </div>
         <div class="team-member col-md-3 col-sm-6 col-xs-12 mb-sm-30 mb-xs-30">
           <div class="inner-box">
-            <div class="image-box"> <img src="assets/images/team/team2.jpg" alt=""> 
+            <div class="image-box"> <img src="{{ asset('imgs/gobichashmereEr2.jpg') }}" alt=""> 
               <!--Overlay Box-->
               <div class="overlay-box"> 
                 <!--User Info-->
                 <div class="user-info">
-                  <div class="text"> Senior Desig </div>
-                  <h4>Danny Burton</h4>
+                  <div class="text"> Үйл ажиллагаа хариуцсан дэд захирал </div>
+                  <h4>Бат</h4>
                 </div>
                 <!--Social Icon Two-->
                 <ul class="social-icon-two">
@@ -193,13 +193,13 @@
         </div>
         <div class="team-member col-md-3 col-sm-6 col-xs-12 mb-xs-30">
           <div class="inner-box">
-            <div class="image-box"> <img src="assets/images/team/team3.jpg" alt=""> 
+            <div class="image-box"> <img src="{{ asset('imgs/gobichashmereEm2.jpg') }}" alt=""> 
               <!--Overlay Box-->
               <div class="overlay-box"> 
                 <!--User Info-->
                 <div class="user-info">
-                  <div class="text"> UX Specialist </div>
-                  <h4>Melody Clark</h4>
+                  <div class="text"> Гадаад худалдааны газрын захирал </div>
+                  <h4>Жимсээ</h4>
                 </div>
                 <!--Social Icon Two-->
                 <ul class="social-icon-two">
@@ -213,13 +213,13 @@
         </div>
         <div class="team-member col-md-3 col-sm-6 col-xs-12 mb-xs-30">
           <div class="inner-box">
-            <div class="image-box"> <img src="assets/images/team/team4.jpg" alt=""> 
+            <div class="image-box"> <img src="{{ asset('imgs/yama4.jpg') }}" alt=""> 
               <!--Overlay Box-->
               <div class="overlay-box"> 
                 <!--User Info-->
                 <div class="user-info">
-                  <div class="text"> Art Director </div>
-                  <h4>Elizabeth Jones</h4>
+                  <div class="text"> Дотоод худалдааны газрын захирал </div>
+                  <h4>Тулга</h4>
                 </div>
                 <!--Social Icon Two-->
                 <ul class="social-icon-two">
@@ -239,7 +239,7 @@
     
  <!--Testimonial Section Start-->
 		<section class="testimonial_wrapper__block padding">
-		    <div class="container">
+		    
 		    	<div class="row text-center">
                   <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 mb-30">
                      <div class="heading-box pb-15">
@@ -255,86 +255,339 @@
 		                <div class="testimonial_carosule-wrap owl-carousel">
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>1976 Монголд анх удаа ямааны ноолуур, тэмээний ноос боловсруулах туршилтын үйлдвэр ашиглалтанд оров.<br> [..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1976 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>Улаанбаатар хотноо ямааны ноолуур, тэмээний ноос боловсруулах үйлдвэр байгуулах тухай Монгол-Японы Засгийн газрын хэлэлцээрийг байгуулав.</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1977<span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>“Говь” үйлдвэрийн барилгын шавыг тавив<br><br><br>[..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1978.08.25 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>Үйлдвэрийн барилгын ажил бүрэн дуусав.<br><br><br>[..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1979-1980 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>Инженер, техникийн ажилтнуудын Япон улсад 78 инженер техникийн ажилтнуудыг 3 сарын хугацаагаар суралцуулав.<br>[..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1979-1981 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>Говь” үйлдвэр үүд хаалгаа анх нээв.<br><br><br>[..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1981.09.05 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
 		                    <div class="single_carousel pt-40">
 		                        <div class="testimonial_text">
-		                        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod [..]</p>
+		                        	<p>Япон улсын дээд сургуульд анхны оюутан Р.Жигжид, П.Ганхуяг нар суралцав.<br><br>[..]</p>
 		                        </div>
 		                        <div class="author_img__block">
                                     <div class="author_tablecell__block">
-                                        <img src="assets/images/author.jpg" alt="">
-                                        <p>John Doe <span>CEO</span></p>
+                                        <img src="" alt="">
+                                        <p>1980-1985 <span></span></p>
 		                            </div>
 		                        </div>
 		                    </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Компьютерийн автомат удирдлага бүхий Япон улсын SET-092 сүлжих машиныг үйлдвэрт суурилуулав.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1987-1989 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Биеийн тамирын заал, ажиллагсдын сувиллын газар, хүүхдийн цэцэрлэг,  152 айлын орон сууцыг ашиглалтанд оруулав.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1986-1992 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Говь комбинат улсын нийт чөлөөт валютын орлогын 70 хувийг дангаараа бүрдүүлж байв.<br><br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1989-1990 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Олон улсын стандарт ISO-9000 тэмдэгтийг үе шаттайгаар нэвтрүүлж, олон улсын чанарын цом болон гэрчилгээг Монгол улсаас анх удаа авсан.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1991 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Япон улсын Shima Seiki брэндийн компьютерийн удирдлагатай сүлжих машиныг суурилууллаа. ISO 9001  Чанарын удирдлагын тогтолцоог хэрэгжүүлж, №1 гэрчилгээг гардан авлаа.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1994 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Итали улсын технологи тоног төхөөрөмжөөр ээрмэл, нэхмэл, сүлжих үйлдвэрийн өргөтгөлийг хийж, 8.0 сая ам.долларын хөрөнгө оруулалт хийв.
+Монгол улсад анх удаа олон улсын чанарын ISO-9001:2000 тэмдэгтийг нэвтрүүллээ.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1995-1996 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Монголд анх удаа ноос ноолууран өргөн хөнжил, ноолууран давуу, драп, нарийн номерын ээрмэл утас үйлдвэрлэх “Говь-2″ үйлдвэрийг ашиглалтанд хүлээн авав.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1997 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Гадаад зах зээлээ өргөжүүлэн 30 гаруй оронтой түншийн харилцаа тогтоож, АНУ-ын зах зээлд анх удаа 45,000 ширхэг бүтээгдэхүүн нийлүүлэв.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>1999 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Утас будах технологи болон орчин үеийн компьютерийн системд холбогдсон сүлжих машинуудыг суурилуулав.
+Будах үйлдвэрийн техник, технологидоо олон улсын чанарын ISO-1004 тэмдэгтийг нэвтрүүллээ.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2000 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Герман улсын Stoll үйлдвэрийн компьютерийн удирдлага бүхий сүлжих машинаар өргөтгөл хийв.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2004 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>“Говь” үйлдвэрийн төрийн мэдлийн хувьцааг Олон улсын нээлттэй дуудлага худалдаагаар “ЭФ СИ АЙ” ХХК худалдан авав.<br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2007 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Говь үйлдвэрийн дэргэдэх Төв дэлгүүрийн барилгын дизайныг Японы алдарт архитекторч Сайко Кейчиро шинээр хийж, дэлгүүр зургадугаар сард нээлтээ хийлээ.
+Япон улсын Shima Seiki брэндийн өндөр хүчин чадал бүхий компьютерийн бүрэн удирдлагатай сүлжих SSG122SV маркийн машин, ээрэхийн үйлдвэрт Итали улсын Stalam болон 66-DD 14G Conti Complett брэндийн машинуудыг суурилуулан үйлдвэрлэлийн хүчин чадлаа өргөтгөв.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2008 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Японы Токио хотод өөрийн салбар дэлгүүрээ нээлээ. Италийн “VVA Consulting Company”-тай хамтран ажиллах гэрээг байгууллаа. Говь Үйлдвэрт техник, технологийн шинэчлэлтүүдийг үе шаттайгаар хийж, Итали, Япон, Швейцарийн тоног, төхөөрөмжүүд суурилууллаа.</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2009 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Монголын ноолуурын салбарт анх удаагаа Принт технологийг нэвтрүүлэн, ноолуур дээр зургийг барлан буулгадаг технологитой боллоо.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2010 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Тоног төхөөрөмжийн шинэтгэл, өргөтгөлд зориулж, 7,1 тэрбум төгрөгийн хөрөнгө оруулалт хийв. Монгол улсад 6 нэрийн барааны дэлгүүрийг шинээр нээв. Үйлдвэрлэлийн хүчин чадлаа 2 дахин нэмэгдүүлэн, шинээр 300-аад ажлын байрыг зарлалаа.</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2011 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Монгол ямааны ноолуурын үндсэн дөрвөн өнгийг цайруулж, будахгүйгээр байгалийн өнгөөр нь бэлэн бүтээгдэхүүн болгох Gobi-Mongolian Organic Cashmere брэндийг худалдаанд гаргалаа. Gobi by Saverio Palatella 2012 оны Намар, Өвлийн 100% ноолууран шинэ коллекцио гаргав.</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2012 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Сүлжих болон болон хялгас ялгах, самнах технологийг шинэчлэн, үйлдвэрлэлийн хэмжээнд нийт 5,3 тэрбум төгрөгийн хөрөнгө оруулалт хийв.
+Сүлжмэлийн машины шинэ технологи болох Whole Garment буюу оёдолгүй сүлжмэл бүтээгдэхүүн сүлжих машинуудыг суурилуулав.
+Gobi-Mongolian Organic Cashmere болон Хямдралын дэлгүүрийг шинээр нээв.
+IFF-JFF БОЛОН Panorama, Фестиваль моды, Import Goods Fair зэрэг Япон, Герман, ОХУ, Солонгос, Хятад зэрэг улсуудад зохион байгуулагдсан олон улсын үзэсгэлэнд амжилтай оролцсон.
+Европын сонгомол хээтэй Баракко загварын драпан оёмол бүтээгдэхүүнийг 5 төрлөөр үйлдвэрлэж, Шилдэг бүтээгдэхүүнээр шалгарав</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2013 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Бельгийн Брюссель болон Швейцарийн Женев хотод салбар дэлгүүрээ нээснээр, гадаад зах зээлд нийт 47 салбар дэлгүүртэй болов.
+Будах үйлдвэрийг бүрэн автоматжуулж, ээрмэл утасны агуулахыг 2 дахин өргөтгөж, 50тн-ийн багтаамжтай болгов.
+Нэхмэл болон  принтэт бүтээгдэхүүн үйлдвэрлэх хүчин чадлыг 2 дахин нэмэгдүүлэв.
+Монголд анх удаа хамгийн нарийн утсаар ваксдаж нэхдэг технологийг нэвтрүүлэв
+Сочи -2014 өвлийн олимпод оролцох баг тамирчдыг ивээн тэтгэлээ.</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2014 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Пальто, пиджакны үлгэр суулт, оёдлын болон материалын чанарыг цоо шинэ технологийн дэвшилд хүргэх зорилгоор Японы Lapine компанитай хамтран  хамтран ажиллаж байна.[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2015 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>Тансаг зэрэглэлийн YAMA брэндийг зах зээлд нэвтрүүллээ. <br><br><br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2016 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>2017 <br><br><br><br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2017 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_carousel pt-40">
+                            <div class="testimonial_text">
+                              <p>2018 <br><br><br><br>[..]</p>
+                            </div>
+                            <div class="author_img__block">
+                                    <div class="author_tablecell__block">
+                                        <img src="" alt="">
+                                        <p>2018 <span></span></p>
+                                </div>
+                            </div>
+                        </div>
 		                    
 		                </div>
 		            </div>
 		        </div>
-		    </div>
 		</section>
 		<!--Testimonial Section End-->
 		
@@ -495,7 +748,7 @@
 		 <!--Pricing End-->
 <!--Our Clients-->
 <section id="clients" class="padding ptb-xs-60">
-  <div class="container">
+  
     <div class="row text-center">
                   <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 mb-30">
                      <div class="heading-box pb-15">
@@ -510,38 +763,32 @@
         <div class="row">
           <div class="col-sm-2">
             <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/1.png" alt=""> </div>
+              <div class="client__logo-img"> <img src="{{ asset('imgs/logo-en.png') }}" alt=""> </div>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/2.png" alt=""> </div>
+              <div class="client__logo-img"> <img src="{{ asset('imgs/logo-en.png') }}" alt=""> </div>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/3.png" alt=""> </div>
+              <div class="client__logo-img"> <img src="{{ asset('imgs/logo-en.png') }}" alt=""> </div>
             </div>
           </div>
           <div class="col-sm-2">
             <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/4.png" alt=""> </div>
+              <div class="client__logo-img"> <img src="{{ asset('imgs/logo-en.png') }}" alt=""> </div>
             </div>
           </div>
            <div class="col-sm-2">
             <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/1.png" alt=""> </div>
-            </div>
-          </div>
-          <div class="col-sm-2">
-            <div class="client__logo">
-              <div class="client__logo-img"> <img src="assets/images/client-logo/2.png" alt=""> </div>
+              <div class="client__logo-img"> <img src="{{ asset('imgs/logo-en.png') }}" alt=""> </div>
             </div>
           </div>
           
         </div>
       </div>
     </div>
-  </div>
 </section>
 @endsection

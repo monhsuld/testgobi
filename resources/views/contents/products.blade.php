@@ -35,31 +35,7 @@
                         <input type="hidden" name="product" value="36936">
                         <input type="hidden" name="related_product" id="related-products-field" value="">
                     </div>
-                    <div class="product-name clearfix hide show-mobile">
-                        <h1 itemprop="name">Cashmere Mens Pigment Bomber Style Cardigan</h1>
-	            	            
-                            <p class="availability in-stock">Availability: <span>In stock</span></p>
-    
-
-                    
-                        <div class="price-box">                         
-                            <p class="old-price">
-                                <span class="price-label"></span>
-                                <span class="price" id="old-price-36936">
-                                    ₮1,753,870                    </span>
-                            </p> 
-
-                            <!-- change special price style for gift sets -->
-                            <p class="special-price">
-                                <span class="price-label"></span>
-                                <span class="price" id="product-price-36936">
-                                    ₮1,160,406                    </span>
-                            </p>
-                        </div>
-
-        	            
-    					<div class="current-offer"></div>
-                    </div>
+                  
                     <div class="product-media grid-7on10 no-margin grid-mobile-12">
                         <!--|CashmereMensPigmentBomberStyleCardigan|-->
                         <div class="product-media__image-wrapper">
@@ -74,13 +50,13 @@
 
 
                                         <img class="product-media__default-img" sizes="(min-width: 46.25em) 71VW,
-                                        100vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9636(1).jpg" srcset="
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 120w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 240w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 480w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 768w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 1200w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
+                                        100vw" src="{{ asset('imgs/01.jpg') }}" srcset="
+                                        {{ asset('imgs/01.jpg') }} 120w,
+                                        {{ asset('imgs/01.jpg') }} 240w,
+                                        {{ asset('imgs/01.jpg') }} 480w,
+                                        {{ asset('imgs/01.jpg') }} 768w,
+                                        {{ asset('imgs/01.jpg') }} 1200w,
+                                        {{ asset('imgs/01.jpg') }} 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
 
                                     </div>
 
@@ -89,13 +65,13 @@
 
 
                                         <img class="product-media__default-img" sizes="(min-width: 46.25em) 71VW,
-                                        100vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9654.jpg" srcset="
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 120w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 240w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 480w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 768w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 1200w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
+                                        100vw" src="{{ asset('imgs/02.jpg') }}" srcset="
+                                        {{ asset('imgs/02.jpg') }} 120w,
+                                        {{ asset('imgs/02.jpg') }} 240w,
+                                        {{ asset('imgs/02.jpg') }} 480w,
+                                        {{ asset('imgs/02.jpg') }} 768w,
+                                        {{ asset('imgs/02.jpg') }} 1200w,
+                                        {{ asset('imgs/02.jpg') }} 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
 
                                     </div>
 
@@ -104,46 +80,15 @@
 
 
                                         <img class="product-media__default-img" sizes="(min-width: 46.25em) 71VW,
-                                        100vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9645.jpg" srcset="
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 120w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 240w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 480w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 768w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 1200w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
+                                        100vw" src="{{ asset('imgs/03.jpg') }}" srcset="
+                                        {{ asset('imgs/03.jpg') }} 120w,
+                                        {{ asset('imgs/03.jpg') }} 240w,
+                                        {{ asset('imgs/03.jpg') }} 480w,
+                                        {{ asset('imgs/03.jpg') }} 768w,
+                                        {{ asset('imgs/03.jpg') }} 1200w,
+                                        {{ asset('imgs/03.jpg') }} 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
 
                                     </div>
-
-                    
-                                    <div class="swiper-slide" style="width: 1002px;">
-
-
-                                        <img class="product-media__default-img" sizes="(min-width: 46.25em) 71VW,
-                                        100vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9625.jpg" srcset="
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 120w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 240w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 480w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 768w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 1200w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
-
-                                    </div>
-
-                    
-                                    <div class="swiper-slide" style="width: 1002px;">
-
-
-                                        <img class="product-media__default-img" sizes="(min-width: 46.25em) 71VW,
-                                        100vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9630.jpg" srcset="
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 120w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 240w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 480w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 768w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 1200w,
-                                        https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 2400w" alt="Cashmere Mens Pigment Bomber Style Cardigan In Navy" title="Cashmere Mens Pigment Bomber Style Cardigan In Pigment">
-
-                                    </div>
-
                     
                                 </div>
 
@@ -154,7 +99,7 @@
 
                         <div class="product-media__zoom-image-wrapper">
 
-                            <img class="product-media__zoom-img" id="image" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9636(1).jpg" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/image/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" alt="">
+                            <img class="product-media__zoom-img" id="image" src="{{ asset('imgs/01.jpg') }}" data-sml-image="{{ asset('imgs/01.jpg') }}" data-med-image="{{ asset('imgs/01.jpg') }}" data-lrg-image="{{ asset('imgs/01.jpg') }}" alt="">
 
                             <div class="product-media__zoom-image-wrapper-desc">
                                 <div class="product-media__gallery product-media__gallery--zoomed" style="height: 1503px;">
@@ -164,58 +109,38 @@
                                         <div class="product-media__item  product-media__item--selected">
 
                                             <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9636(2).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" alt="Color: " title="Color: ">
+                                                    15vw" src="{{ asset('imgs/01.jpg') }}" srcset="{{ asset('imgs/01.jpg') }} 120w,
+                                                    {{ asset('imgs/01.jpg') }} 240w,
+                                                    {{ asset('imgs/01.jpg') }} 480w,
+                                                    {{ asset('imgs/01.jpg') }} 768w,
+                                                    {{ asset('imgs/01.jpg') }} 1200w,
+                                                    {{ asset('imgs/01.jpg') }} 2400w" data-sml-image="{{ asset('imgs/01.jpg') }}" data-med-image="{{ asset('imgs/01.jpg') }}" data-lrg-image="{{ asset('imgs/01.jpg') }}{{ asset('imgs/01.jpg') }}edia__item ">
+
+                                            
 
                                         </div>
                                         <div class="product-media__item ">
 
                                             <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                            15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9654(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 120w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 240w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 480w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 768w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 1200w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" alt="Color: " title="Color: ">
+                                                            15vw" src="{{ asset('imgs/02.jpg') }}" srcset="{{ asset('imgs/02.jpg') }} 120w,
+                                                            {{ asset('imgs/02.jpg') }} 240w,
+                                                            {{ asset('imgs/02.jpg') }} 480w,
+                                                            {{ asset('imgs/02.jpg') }} 768w,
+                                                            {{ asset('imgs/02.jpg') }} 1200w,
+                                                            {{ asset('imgs/02.jpg') }} 2400w" data-sml-image="{{ asset('imgs/02.jpg') }}" data-med-image="{{ asset('imgs/02.jpg') }}" data-lrg-image="{{ asset('imgs/02.jpg') }}" alt="Color: " title="Color: ">
 
                                         </div>
                                         <div class="product-media__item ">
 
                                             <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                            15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9645(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 120w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 240w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 480w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 768w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 1200w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" alt="Color: " title="Color: ">
+                                                            15vw" src="{{ asset('imgs/03.jpg') }}" srcset="{{ asset('imgs/03.jpg') }} 120w,
+                                                            {{ asset('imgs/03.jpg') }} 240w,
+                                                            {{ asset('imgs/03.jpg') }} 480w,
+                                                            {{ asset('imgs/03.jpg') }} 768w,
+                                                            {{ asset('imgs/03.jpg') }} 1200w,
+                                                            {{ asset('imgs/03.jpg') }} 2400w" data-sml-image="{{ asset('imgs/03.jpg') }}" data-med-image="{{ asset('imgs/03.jpg') }}" data-lrg-image="{{ asset('imgs/03.jpg') }}" alt="Color: " title="Color: ">
 
-                                        </div>
-                                        <div class="product-media__item ">
-
-                                            <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                            15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9625(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 120w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 240w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 480w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 768w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 1200w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" alt="Color: " title="Color: ">
-
-                                        </div>
-                                        <div class="product-media__item ">
-
-                                            <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                            15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9630(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 120w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 240w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 480w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 768w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 1200w,
-                                                            https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" alt="Color: " title="Color: ">
-
-                                        </div>
+                                        </div>>
                                     </div>
                                 </div>
                                 <div class="product-media__zoom-title"></div>
@@ -232,56 +157,32 @@
                                 <div class="product-media__item  product-media__item--selected">
 
                                     <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9636(2).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9636.jpg" alt="Color: " title="Color: ">
-
+                                                            15vw" src="{{ asset('imgs/01.jpg') }}" srcset="{{ asset('imgs/01.jpg') }} 120w,
+                                                            {{ asset('imgs/01.jpg') }} 240w,
+                                                            {{ asset('imgs/01.jpg') }} 480w,
+                                                            {{ asset('imgs/01.jpg') }} 768w,
+                                                            {{ asset('imgs/01.jpg') }} 1200w,
+                                                            {{ asset('imgs/01.jpg') }} 2400w" data-sml-image="{{ asset('imgs/01.jpg') }}" data-med-image="{{ asset('imgs/01.jpg') }}" data-lrg-image="{{ asset('imgs/01.jpg') }}" alt="Color: " title="Color: ">
                                 </div>
                                 <div class="product-media__item ">
 
                                     <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9654(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9654.jpg" alt="Color: " title="Color: ">
-
+                                                            15vw" src="{{ asset('imgs/02.jpg') }}" srcset="{{ asset('imgs/02.jpg') }} 120w,
+                                                            {{ asset('imgs/02.jpg') }} 240w,
+                                                            {{ asset('imgs/02.jpg') }} 480w,
+                                                            {{ asset('imgs/02.jpg') }} 768w,
+                                                            {{ asset('imgs/02.jpg') }} 1200w,
+                                                            {{ asset('imgs/02.jpg') }} 2400w" data-sml-image="{{ asset('imgs/02.jpg') }}" data-med-image="{{ asset('imgs/02.jpg') }}" data-lrg-image="{{ asset('imgs/02.jpg') }}" alt="Color: " title="Color: ">
                                 </div>
                                 <div class="product-media__item ">
 
                                     <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9645(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9645.jpg" alt="Color: " title="Color: ">
-
-                                </div>
-                                <div class="product-media__item ">
-
-                                    <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9625(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9625.jpg" alt="Color: " title="Color: ">
-
-                                </div>
-                                <div class="product-media__item ">
-
-                                    <img class="product-media__thumb " sizes="(min-width: 46.25em) 13vw,
-                                                    15vw" src="./Cashmere Mens Pigment Bomber Style Cardigan _ Johnstons of Elgin_files/kak03473-sd7286_50a9630(1).jpg" srcset="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/120x180/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 120w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/240x360/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 240w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/480x720/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 480w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/768x1152/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 768w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 1200w,
-                                                    https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2400x3600/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg 2400w" data-sml-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/1200x1800/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" data-med-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/2100x3150/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" data-lrg-image="https://www.johnstonscashmere.com/media/catalog/product/cache/7/thumbnail/3500x5250/85e4522595efc69f496374d01ef2bf13/k/a/kak03473-sd7286_50a9630.jpg" alt="Color: " title="Color: ">
+                                                            15vw" src="{{ asset('imgs/03.jpg') }}" srcset="{{ asset('imgs/03.jpg') }} 120w,
+                                                            {{ asset('imgs/03.jpg') }} 240w,
+                                                            {{ asset('imgs/03.jpg') }} 480w,
+                                                            {{ asset('imgs/03.jpg') }} 768w,
+                                                            {{ asset('imgs/03.jpg') }} 1200w,
+                                                            {{ asset('imgs/03.jpg') }} 2400w" data-sml-image="{{ asset('imgs/03.jpg') }}" data-med-image="{{ asset('imgs/03.jpg') }}" data-lrg-image="{{ asset('imgs/03.jpg') }}" alt="Color: " title="Color: ">
 
                                 </div>
                             </div>
@@ -296,18 +197,18 @@
                   
                             <div class="price-box">
                                                                         
-                                <p class="old-price">
+                                <!-- <p class="old-price">
                                     <span class="price-label"></span>
                                     <span class="price" id="old-price-36936">
                                         ₮1,753,870                    </span>
-                                </p> 
+                                </p> --> 
 
                                             <!-- change special price style for gift sets -->
-                                <p class="special-price">
+                                <!-- <p class="special-price">
                                     <span class="price-label"></span>
                                     <span class="price" id="product-price-36936">
                                         ₮1,160,406                    </span>
-                                </p>
+                                </p> -->
                                                         
                     
                             </div>
@@ -316,57 +217,14 @@
 							<div class="current-offer"></div>
                         </div>
 
-                        <script type="text/javascript">
-                        //<![CDATA[
-                            var productAddToCartForm = new VarienForm('product_addtocart_form');
-                            productAddToCartForm.submit = function(button, url) {
-                                if (this.validator.validate()) {
-                                    var form = this.form;
-                                    var oldUrl = form.action;
-
-                                    if (url) {
-                                       form.action = url;
-                                    }
-                                    var e = null;
-                                    try {
-                                        this.form.submit();
-                                    } catch (e) {
-                                    }
-                                    this.form.action = oldUrl;
-                                    if (e) {
-                                        throw e;
-                                    }
-
-                                    if (button && button != 'undefined') {
-                                        button.disabled = true;
-                                    }
-                                }
-                            }.bind(productAddToCartForm);
-
-                            productAddToCartForm.submitLight = function(button, url){
-                                if(this.validator) {
-                                    var nv = Validation.methods;
-                                    delete Validation.methods['required-entry'];
-                                    delete Validation.methods['validate-one-required'];
-                                    delete Validation.methods['validate-one-required-by-name'];
-                                    if (this.validator.validate()) {
-                                        if (url) {
-                                            this.form.action = url;
-                                        }
-                                        this.form.submit();
-                                    }
-                                    Object.extend(Validation.methods, nv);
-                                }
-                            }.bind(productAddToCartForm);
-                        //]]>
-                        </script>
-                        <div id="productsku" class="sku">Product Code : 
+                        
+                        <div id="productsku" class="sku">Барааны код : 
                             <div id="sku-code">64331 PIGMENT</div>
                         </div>
                             <div class="product-collateral">
                                 <div class="tabs">
                                     <dl class="js-accordion accordion">
-                                        <dt class="accordion__heading accordion-item-heading icon-right reopen accordion__heading--is-opened">Description</dt>
+                                        <dt class="accordion__heading accordion-item-heading icon-right reopen accordion__heading--is-opened">Тайлбар</dt>
                                         <dd class="accordion__content accordion-item-content" style="display: block;">
                                             <p>Mens Cashmere Bomber Style Cardigan in a deep shade of blue - made in Scotland by Johnstons of Elgin.</p>
                                             <p>The bomber cardigan is made from 100% cashmere, soft, luxurious and effortlessly stylish.</p>
@@ -378,9 +236,9 @@
                                             <p>Size: XS S M L XL XXL</p>
                                             <p>Length: 69cm / 27"</p>
                                             <p>Model is 6ft1" / UK40 and wears size S</p>
-                                            <p><a class="”prod-page-desc-link”" href="https://www.johnstonscashmere.com/international/cashmere-care.html">Hand Wash</a></p>    
+                                            <p><a class="”prod-page-desc-link”" href="#">Hand Wash</a></p>    
                                         </dd>
-                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Size Guide</dt>
+                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Хэмжээ</dt>
                                         <dd class="accordion__content" style="display: none;">
                                             <div id="sizeguidetable">
                                                 <tr>
@@ -411,10 +269,10 @@
                                                 Please note measurements are in inches, and can vary slightly from garment to garment due to our hand finishing processes.
                                                 <br>
                                                 <br>
-                                                If you require any further information, contact <a href="mailto:ecommerce@johnstonscashmere.com">ecommerce@johnstonscashmere.com</a>
+                                                If you require any further information, contact <a href="#">www.gobi.mn</a>
                                             </p>
                                         </dd>
-                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Care Guide</dt>
+                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Арчилгаа</dt>
                                         <dd class="accordion__content care-content" style="display: none;">
                                             <h4>Look after your fabric</h4>
                                             <h4>Lavish a little love on your favourite things</h4>
@@ -422,7 +280,7 @@
                                             <p>&nbsp;</p>
                                             <h4>Wearing your cashmere for the first time</h4>
                                             <p>
-                                                When you first wear your new garment you may find small balls of fibre or 'pills' forming on the surface. These are not a fault or indication of inferior quality but are simply loose fibres tangling together where the garment has been rubbing. They can easily be removed by hand or with our <a title="Cashmere De-pilling Comb" href="https://www.johnstonscashmere.com/retail/cashmere-care/de-pilling-knitwear-comb.html">cashmere de-pilling comb</a>. Once removed, your garment will actually consolidate and become softer. You can browse our full collection of care products <a title="Cashmere Care" href="https://www.johnstonscashmere.com/retail/cashmere-care.html">here</a>.
+                                                When you first wear your new garment you may find small balls of fibre or 'pills' forming on the surface. These are not a fault or indication of inferior quality but are simply loose fibres tangling together where the garment has been rubbing. They can easily be removed by hand or with our <a title="Cashmere De-pilling Comb" href="#">cashmere de-pilling comb</a>. Once removed, your garment will actually consolidate and become softer. You can browse our full collection of care products <a title="Cashmere Care" href="#">here</a>.
                                             </p>
                                             <p>&nbsp;</p>
                                             <h4>Handwashing and dry-cleaning</h4>
@@ -446,7 +304,7 @@
                                                 Following these instructions, your garment will preserve its shape and luxurious touch for many years - the hallmarks of the very best cashmere.
                                             </p>    
                                         </dd>
-                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Delivery &amp; Returns</dt>
+                                        <dt class="accordion__heading icon-right accordion__heading--is-closed">Хүргэлт</dt>
                                         <dd class="accordion__content shipping-content" style="display: none;">
                                             <h2>Last order dates for delivery before 25th December 2017</h2>
                                             <p>
@@ -455,23 +313,7 @@
                                                 ROW: Monday 18th December 2017 (17th if ordering Embroidered products)
                                             </p>
 
-                                            <p>
-                                                We ship worldwide with DHL Express, meaning you get your order as quickly as possible. Find out more about our 
-                                                <span class="widget widget-cms-link-inline">
-                                                    <a href="https://www.johnstonscashmere.com/international/customer-assistance/delivery-returns" title="Delivery &amp; Returns | Johnstons of Elgin">
-                                                        <span>Shipping options</span>
-                                                    </a>
-                                                </span>
-                                            .</p>
-                                            <!--<p>Please note deliveries to China, Russia and P.O. Boxes are provided by Royal Mail International Delivery Service. Therefore we cannot provide guaranteed delivery dates for orders placed for delivery to these areas.</p>-->
-                                            <p>
-                                                We want you to be absolutely delighted with your purchase. If for any reason you are not, we offer a generous 28 day returns and exchange policy. Find out more about our 
-                                                <span class="widget widget-cms-link-inline">
-                                                    <a href="https://www.johnstonscashmere.com/international/customer-assistance/delivery-returns" title="Delivery &amp; Returns | Johnstons of Elgin">
-                                                        <span>Returns policy</span>
-                                                    </a>
-                                                </span>
-                                            .</p>                    
+                                             
                                         </dd>
                                     </dl>
                                 </div>
@@ -482,8 +324,7 @@
             
         </div>
 				
-		<!-- Avocet Secure JavaScript Pixel - JoE - All pages - 58b83d3df0fa4b9b2e7f931e -->
-		<!-- end -->
+		
 	
     </div>
         <!-- Hotjar Tracking Code for http://www.johnstonscashmere.com/ -->
@@ -493,25 +334,7 @@
 @endsection
 
 @section('scripts')
-<script type="text/javascript">
-    var lifetime = 3600;
-    var expireAt = Mage.Cookies.expires;
-    if (lifetime > 0) {
-        expireAt = new Date();
-        expireAt.setTime(expireAt.getTime() + lifetime * 1000);
-    }
-    Mage.Cookies.set('external_no_cache', 1, expireAt);
-</script>
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:517353,hjsv:5};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+
 
 <script type="text/javascript" src="{{asset('js/pro6.js') }}" async=""></script>    
 

@@ -2303,7 +2303,6 @@ opacity: 0;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-image: url(../images/bg.jpg);
 	background-attachment: fixed;
 	padding: 150px 0;
 }
@@ -2365,7 +2364,7 @@ opacity: 0;
 .client__logo {
 	-webkit-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
-	border: 1px solid #333;
+	/*border: 1px solid #333;*/
 	margin-bottom: 30px;
 }
 .client__logo:hover {
@@ -2570,7 +2569,6 @@ opacity: 0;
 
 /*testimonial section style*/
 .testimonial_wrapper__block {
-	background-image: url(../images/bg.jpg);
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -2925,7 +2923,6 @@ opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: url(../images/plus.png) no-repeat center center rgba(0, 0, 0, 0.7);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);
 	opacity: 0;

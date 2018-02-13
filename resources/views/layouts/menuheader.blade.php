@@ -19,9 +19,9 @@
                 <ul class="nav navbar-nav navbar-right">
                   <li><a href="#!">Бүтээгдэхүүн <i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu">
-                      <li><a href="{{ url('products') }}">index 1</a></li>
-                      <li><a href="{{ url('products') }}">index 2</a></li>
-                      <li><a href="{{ url('products') }}">index 3</a></li>
+                      <li><a href="{{ url('products') }}">Эрэгтэй</a></li>
+                      <li><a href="{{ url('products') }}">Эмэгтэй</a></li>
+                      <li><a href="{{ url('products') }}">Yama</a></li>
                       <li><a href="{{ url('products') }}">index 4</a></li>
                       <li><a href="{{ url('products') }}">index 5</a></li>
                       <li><a href="{{ url('products') }}">index 6</a></li>

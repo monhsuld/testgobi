@@ -13,7 +13,11 @@ class Promotions extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('promotions', function (Blueprint $table) {
+            $table->increments('promotion_id');
+            $table->string('name');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,6 +27,6 @@ class Promotions extends Migration
      */
     public function down()
     {
-        //
+        Schema::rollback('promotions');
     }
 }

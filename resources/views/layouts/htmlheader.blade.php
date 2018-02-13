@@ -20,6 +20,7 @@
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/index5.css') }}" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     
     <style type="text/css">.fancybox-margin{margin-right:17px;}</style>
 </head>

@@ -1,4 +1,162 @@
 @extends('welcome')
+@section('styles')
+<style type="text/css">
+ @import url("https://fonts.googleapis.com/css?family=Cardo|Pathway+Gothic+One");
+.timeline {
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 700px;
+  position: relative;
+}
+.timeline__content-title {
+  font-weight: normal;
+  font-size: 66px;
+  margin: -10px 0 0 0;
+  transition: .4s;
+  padding: 0 10px;
+  box-sizing: border-box;
+  font-family: "Pathway Gothic One", sans-serif;
+  color: #fff;
+}
+.timeline__content-desc {
+  margin: 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Cardo;
+  font-weight: normal;
+  line-height: 25px;
+}
+.timeline:before {
+  position: absolute;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  margin-left: -1px;
+  content: "";
+  background: rgba(255, 255, 255, 0.07);
+}
+@media only screen and (max-width: 767px) {
+  .timeline:before {
+    left: 40px;
+  }
+}
+.timeline-item {
+  padding: 40px 0;
+  opacity: .3;
+  filter: blur(2px);
+  transition: .5s;
+  box-sizing: border-box;
+  width: calc(50% - 40px);
+  display: flex;
+  position: relative;
+  transform: translateY(-80px);
+}
+.timeline-item:before {
+  content: attr(data-text);
+  letter-spacing: 3px;
+  width: 100%;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+  font-family: "Pathway Gothic One", sans-serif;
+  border-left: 2px solid rgba(255, 255, 255, 0.5);
+  top: 70%;
+  margin-top: -5px;
+  padding-left: 15px;
+  opacity: 0;
+  right: calc(-100% - 56px);
+}
+.timeline-item:nth-child(even) {
+  align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+  right: auto;
+  text-align: right;
+  left: calc(-100% - 56px);
+  padding-left: 0;
+  border-left: none;
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  padding-right: 15px;
+}
+.timeline-item--active {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0px);
+}
+.timeline-item--active:before {
+  top: 50%;
+  transition: .3s all .2s;
+  opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+  margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+  .timeline-item {
+    align-self: baseline !important;
+    width: 100%;
+    padding: 0 30px 150px 80px;
+  }
+  .timeline-item:before {
+    left: 10px !important;
+    padding: 0 !important;
+    top: 50px;
+    text-align: center !important;
+    width: 60px;
+    border: none !important;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 40px;
+  }
+}
+.timeline__img {
+  max-width: 100%;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
+}
+.timeline-container {
+  width: 100%;
+  position: relative;
+  padding: 80px 0;
+  transition: .3s ease 0s;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.timeline-container:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(99, 99, 99, 0.8);
+  content: "";
+}
+.timeline-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+.timeline-header__title {
+  color: #fff;
+  font-size: 46px;
+  font-family: Cardo;
+  font-weight: normal;
+  margin: 0;
+}
+.timeline-header__subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 16px;
+  letter-spacing: 5px;
+  margin: 10px 0 0 0;
+  font-weight: normal;
+}
+
+</style>
+@endsection
 @section('content')
 <div class="page-header">
             <div class="container">
@@ -239,8 +397,96 @@
     
  <!--Testimonial Section Start-->
 		<section class="testimonial_wrapper__block padding">
-		    
-		    	<div class="row text-center">
+
+
+      <!-- timeline storys -->
+      
+<div class="timeline-container" id="timeline-1">
+  <div class="timeline-header">
+    <h2 class="timeline-header__title">Говь ХК</h2>
+    <h3 class="timeline-header__subtitle">Бидний түүх</h3>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://i.cdn.ensonhaber.com/resimler/diger/ataturk_3473.jpg"/>
+        <h2 class="timeline__content-title">1976</h2>
+        <p class="timeline__content-desc"> Монголд анх удаа ямааны ноолуур, тэмээний ноос боловсруулах туршилтын үйлдвэр ашиглалтанд оров.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://gazetemanifesto.com/wp-content/uploads/2015/11/mustafa-kemal.jpg"/>
+        <h2 class="timeline__content-title">1977</h2>
+        <p class="timeline__content-desc">Улаанбаатар хотноо ямааны ноолуур, тэмээний ноос боловсруулах үйлдвэр байгуулах тухай Монгол-Японы Засгийн газрын хэлэлцээрийг байгуулав.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="https://upload.wikimedia.org/wikipedia/commons/2/20/Ataturk-1930-amongpublic.jpg"/>
+        <h2 class="timeline__content-title">1978-1981</h2>
+        <p class="timeline__content-desc">1978.08.25 “Говь” үйлдвэрийн барилгын шавыг тавив. Үйлдвэрийн барилгын ажил бүрэн дуусав. Инженер, техникийн ажилтнуудын Япон улсад 78 инженер техникийн ажилтнуудыг 3 сарын хугацаагаар суралцуулав.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://cdn.yemek.com/uploads/2014/11/ataturk-10-kasim.jpg"/>
+        <h2 class="timeline__content-title">1981.09.05</h2>
+        <p class="timeline__content-desc">Говь” үйлдвэр үүд хаалгаа анх нээв.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://ataturk.istanbul.gov.tr/GalleryLibrary/12.jpg"/>
+        <h2 class="timeline__content-title">1980-1985</h2>
+        <p class="timeline__content-desc">Япон улсын дээд сургуульд анхны оюутан Р.Жигжид, П.Ганхуяг нар суралцав.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://blog.istanbul1881.com/wp-content/uploads/2016/08/atat%C3%BCrk-%C3%BCn-inan%C4%B1lmaz-karizmatik-fotograf%C4%B1_861050.jpg"/>
+        <h2 class="timeline__content-title">1987-1989</h2>
+        <p class="timeline__content-desc">Компьютерийн автомат удирдлага бүхий Япон улсын SET-092 сүлжих машиныг үйлдвэрт суурилуулав.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg"/>
+        <h2 class="timeline__content-title">1986-1992</h2>
+        <p class="timeline__content-desc">Биеийн тамирын заал, ажиллагсдын сувиллын газар, хүүхдийн цэцэрлэг,  152 айлын орон сууцыг ашиглалтанд оруулав.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
+        <h2 class="timeline__content-title">1989-1990</h2>
+        <p class="timeline__content-desc">
+          Говь комбинат улсын нийт чөлөөт валютын орлогын 70 хувийг дангаараа бүрдүүлж байв.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+        <h2 class="timeline__content-title">1991-1994</h2>
+        <p class="timeline__content-desc">1991 онд олон улсын стандарт ISO-9000 тэмдэгтийг үе шаттайгаар нэвтрүүлж, олон улсын чанарын цом болон гэрчилгээг Монгол улсаас анх удаа авсан. Япон улсын Shima Seiki брэндийн компьютерийн удирдлагатай сүлжих машиныг суурилууллаа. 1994 ISO 9001  Чанарын удирдлагын тогтолцоог хэрэгжүүлж, №1 гэрчилгээг гардан авлаа.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
+        <h2 class="timeline__content-title">1995-1996</h2>
+        <p class="timeline__content-desc">Итали улсын технологи тоног төхөөрөмжөөр ээрмэл, нэхмэл, сүлжих үйлдвэрийн өргөтгөлийг хийж, 8.0 сая ам.долларын хөрөнгө оруулалт хийв.
+Монгол улсад анх удаа олон улсын чанарын ISO-9001:2000 тэмдэгтийг нэвтрүүллээ.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+        <h2 class="timeline__content-title">1934</h2>
+        <p class="timeline__content-desc">
+          Монголд анх удаа ноос ноолууран өргөн хөнжил, ноолууран давуу, драп, нарийн номерын ээрмэл утас үйлдвэрлэх “Говь-2″ үйлдвэрийг ашиглалтанд хүлээн авав.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="Зурагны тайлбар">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
+        <h2 class="timeline__content-title">1999</h2>
+        <p class="timeline__content-desc">Гадаад зах зээлээ өргөжүүлэн 30 гаруй оронтой түншийн харилцаа тогтоож, АНУ-ын зах зээлд анх удаа 45,000 ширхэг бүтээгдэхүүн нийлүүлэв.</p>
+      </div>
+    </div>
+  </div>
+</div>
+		    	<!-- <div class="row text-center">
                   <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 mb-30">
                      <div class="heading-box pb-15">
                         <h2>Our Testimonial</h2>
@@ -587,7 +833,7 @@ IFF-JFF БОЛОН Panorama, Фестиваль моды, Import Goods Fair зэ
 		                    
 		                </div>
 		            </div>
-		        </div>
+		        </div> -->
 		</section>
 		<!--Testimonial Section End-->
 		
@@ -791,4 +1037,67 @@ IFF-JFF БОЛОН Panorama, Фестиваль моды, Import Goods Fair зэ
       </div>
     </div>
 </section>
+@endsection
+@section('scripts')
+
+<script type="text/javascript">
+  (function($) {
+  $.fn.timeline = function() {
+    var selectors = {
+      id: $(this),
+      item: $(this).find(".timeline-item"),
+      activeClass: "timeline-item--active",
+      img: ".timeline__img"
+    };
+    selectors.item.eq(0).addClass(selectors.activeClass);
+    selectors.id.css(
+      "background-image",
+      "url(" +
+        selectors.item
+          .first()
+          .find(selectors.img)
+          .attr("src") +
+        ")"
+    );
+    var itemLength = selectors.item.length;
+    $(window).scroll(function() {
+      var max, min;
+      var pos = $(this).scrollTop();
+      selectors.item.each(function(i) {
+        min = $(this).offset().top;
+        max = $(this).height() + $(this).offset().top;
+        var that = $(this);
+        if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          selectors.item.removeClass(selectors.activeClass);
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              selectors.item
+                .last()
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.last().addClass(selectors.activeClass);
+        } else if (pos <= max - 40 && pos >= min) {
+          selectors.id.css(
+            "background-image",
+            "url(" +
+              $(this)
+                .find(selectors.img)
+                .attr("src") +
+              ")"
+          );
+          selectors.item.removeClass(selectors.activeClass);
+          $(this).addClass(selectors.activeClass);
+        }
+      });
+    });
+  };
+})(jQuery);
+
+$("#timeline-1").timeline();
+
+</script>
+
 @endsection

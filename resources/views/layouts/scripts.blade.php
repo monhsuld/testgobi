@@ -21,5 +21,5 @@
 <!-- Carousel Js --> 
 <script src="{{ asset('js/owl.carousel.min.js') }}" type="text/javascript"></script> 
 <!-- custom Js --> 
-<script src="{{ asset('js/custom.js') }}" type="text/javascript"></script>
+<!-- <script src="{{ asset('js/custom.js') }}" type="text/javascript"></script> -->
 <script src="{{ asset('js/isotope-custom.js') }}" type="text/javascript"></script>

@@ -123,221 +123,155 @@
       }
     }
 </style>
+<style type="text/css">
+    body {
+  font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+#timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #031625;
+}
+#timeline:hover .tl-item {
+  width: 23.3333%;
+}
+
+.tl-item {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: relative;
+  width: 25%;
+  height: 70vh;
+  min-height: 400px;
+  color: #fff;
+  overflow: hidden;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+}
+.tl-item:before, .tl-item:after {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.tl-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.tl-item:before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  z-index: 1;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 0, 0) translateY(50%);
+          transform: translate3d(0, 0, 0) translateY(50%);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.tl-item:hover {
+  width: 30% !important;
+}
+.tl-item:hover:after {
+  opacity: 0;
+}
+.tl-item:hover:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0) translateY(0);
+          transform: translate3d(0, 0, 0) translateY(0);
+  -webkit-transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, -webkit-transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+  transition: opacity 1s ease, transform 1s ease 0.25s, -webkit-transform 1s ease 0.25s;
+}
+.tl-item:hover .tl-content {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: all 0.75s ease 0.5s;
+  transition: all 0.75s ease 0.5s;
+}
+.tl-item:hover .tl-bg {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.tl-content {
+  -webkit-transform: translate3d(0, 0, 0) translateY(25px);
+          transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
+}
+.tl-content h1 {
+  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
+}
+
+.tl-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.tl-year p {
+  font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size: 1.728rem;
+  line-height: 0;
+}
+
+.tl-bg {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transition: -webkit-filter 0.5s ease;
+  transition: -webkit-filter 0.5s ease;
+  transition: filter 0.5s ease;
+  transition: filter 0.5s ease, -webkit-filter 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+</style>
+<style>
+.mySlides {display:none;}
+</style>
 @endsection
 @section('content')
         <!-- Banner -->
-        <div class="slider slider-bg-5">
-            <div class="container">
-                <div class="col-lg-6 col-md-offset-3 text-center">
-                    
-                        <div class="solid_bdr">
-                            <div class="content-text__block">
-                                <!-- <h1>hello</h1>
-                                <h2>i am John smith</h2> -->
-                                <h3> Монголын ноос, ноолуурын салбарын анхдагч <strong>“Говь”</strong> үйлдвэр</h3>
-                                <a class="button-hover" href="#">Бидний тухай <i class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                
-                </div>
-            </div>
-        </div>
-        <!--End Banner -->
-<section class="padding ptb-xs-40">
-<div class="container">
-
-           
-
-            <ul class="filter list-inline">
-                <li><a class="active"  href="#" data-filter="*">Брэнд</a></li>
-                <li><a href="#" data-filter=".cashmere">Gobi cashmere</a></li>
-                <li><a href="#" data-filter=".yama">Yama</a></li>
-                <li><a href="#" data-filter=".organic">Gobi Organic</a></li>
-                <li><a href="#" data-filter=".kids">Gobi Kids</a></li>
-            </ul>
-            <div class="row">
-                <div class="portfolio-box iso-call col-4-space" style="position: relative; height: 1099.25px;">
-
-                    <div class="project-post cashmere organic" style="position: absolute; left: 0px; top: 0px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/gobichashmereEm.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-8.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/portfolio-single.html">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                    <div class="project-post yama kids" style="position: absolute; left: 292px; top: 0px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/yama1.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/mas-1.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/portfolio-single.html">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-
-                    <div class="project-post yama kids" style="position: absolute; left: 585px; top: 0px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/yama2.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-3.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                    <div class="project-post cashmere kids" style="position: absolute; left: 877px; top: 0px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/gobichashmereEm2.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-4.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-
-                    <div class="project-post organic" style="position: absolute; left: 0px; top: 274px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/ger1.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-5.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                    <div class="project-post  yama" style="position: absolute; left: 585px; top: 274px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/yama3.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-6.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-
-                    <div class="project-post  organic" style="position: absolute; left: 877px; top: 274px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/ger2.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/mas-1.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-
-
-                    <div class="project-post organic" style="position: absolute; left: 292px; top: 449px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/ger3.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/mas-2.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-
-                    <div class="project-post  organic" style="position: absolute; left: 0px; top: 549px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/ger4.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-2.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                     <div class="project-post  yama" style="position: absolute; left: 585px; top: 549px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/yama4.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-1.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                      <div class="project-post  cashmere" style="position: absolute; left: 877px; top: 724px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/gobichashmereEr1.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-9.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                    <div class="project-post  cashmere" style="position: absolute; left: 0px; top: 824px;">
-                        <div class="item-img-wrap ">
-                            <img src="{{ asset('imgs/gobichashmereEr2.jpg') }}" class="img-responsive" alt="workimg">
-                            <div class="item-img-overlay">
-                                <a href="./Wimo - Minimal Portfolio Template_files/img-3.jpg" class="show-image">
-                                    <span></span>
-                                </a>
-                            </div>
-                        </div> 
-                        <div class="work-desc">
-                            <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#">Logo Design</a></h3>
-                            <span>illustrate</span>
-                        </div><!--work desc-->
-                    </div><!--project post-->
-                </div>
-            </div>
-        </div><!--container-->
-
-</section>
-<!--Portfolio Section End-->
+<div class="w3-content w3-section" style="max-width:100%">
+  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide1.jpg')}}" style="width:100%; height: 1200px;">
+  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide2.jpg')}}" style="width:100%; height: 1200px;">
+  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide3.jpg')}}" style="width:100%; height: 1200px;">
+  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide2.jpg')}}" style="width:100%; height: 1200px;">
+</div>
 
 <!-- services_box -->
 <section class="padding ptb-xs-40 gray-bg">
@@ -359,7 +293,7 @@
                             <i class="fa fa-laptop" aria-hidden="true"></i>
                             </div>
                             <div class="serv-poin">
-                                <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#!">Хувь захиалга</a></h3>
+                                <h3><a href="#!">Хувь захиалга</a></h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 </p>
@@ -373,7 +307,7 @@
                             <i class="fa fa-camera-retro" aria-hidden="true"></i>
                             </div>
                             <div class="serv-poin">
-                                <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#!">Принтинг</a></h3>
+                                <h3><a href="#!">Принтинг</a></h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 </p>
@@ -388,7 +322,7 @@
                             <i class="fa fa-suitcase" aria-hidden="true"></i>
                             </div>
                             <div class="serv-poin">
-                                <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#!">Хими </a></h3>
+                                <h3><a href="#!">Хими </a></h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 </p>
@@ -403,7 +337,7 @@
                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                             </div>
                             <div class="serv-poin">
-                                <h3><a href="http://theembazaar.com/demo/eforest/wimo/html/index.html#!">Нөхөн засвар</a></h3>
+                                <h3><a href="#!">Нөхөн засвар</a></h3>
                                 <p>
                                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                                 </p>
@@ -413,6 +347,74 @@
                     
         </div>
     </div>
+
+</section>
+        <!--End Banner -->
+<section id="timeline">
+  
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2011</p>
+    </div>
+
+    <div class="tl-content">
+      <h1>Lorem ipsum dolor sit</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2013</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2014</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+    </div>
+
+  </div>
+
+  <div class="tl-item">
+    
+    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+    
+    <div class="tl-year">
+      <p class="f2 heading--sanSerif">2016</p>
+    </div>
+
+    <div class="tl-content">
+      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+    </div>
+
+  </div>
+</section>
+
+<!--Portfolio Section End-->
+
     <div class="bts-popup" role="alert">
         <div class="bts-popup-container">
           <img src="{{ asset('imgs/gobisale.jpg') }}" alt="" width="100%" />
@@ -423,7 +425,6 @@
             <a href="#0" class="bts-popup-close img-replace">Close</a>
         </div>
     </div>
-</section>
 @endsection
 @section('scripts')
     <script type="text/javascript">
@@ -454,4 +455,20 @@
             });
         });
     </script>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2500);    
+}
+</script>
 @endsection

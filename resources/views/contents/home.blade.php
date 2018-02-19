@@ -1,5 +1,7 @@
 @extends('welcome')
 @section('styles')
+    <link href="{{ asset('themes/1/js-image-slider.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('themes/1/js-image-slider.js') }}" type="text/javascript"></script>
 <style type="text/css">
     .img-replace {
       /* replace text with an image */
@@ -169,8 +171,8 @@
   transition: opacity 0.5s ease;
 }
 .tl-item:before {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(75%, black));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 75%);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(95%, black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 95%);
   z-index: 1;
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 0) translateY(50%);
@@ -260,17 +262,30 @@
 }
 
 </style>
-<style>
-.mySlides {display:none;}
-</style>
 @endsection
 @section('content')
         <!-- Banner -->
-<div class="w3-content w3-section" style="max-width:100%">
-  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide1.jpg')}}" style="width:100%; height: 1200px;">
-  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide2.jpg')}}" style="width:100%; height: 1200px;">
-  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide3.jpg')}}" style="width:100%; height: 1200px;">
-  <img class="mySlides w3-animate-left" src="{{ asset('imgs/slide2.jpg')}}" style="width:100%; height: 1200px;">
+<!-- <div id="slidercontainer">
+    <div style="max-width:100%;" id="css3slider">
+      <img src="{{ asset('imgs/slide1.jpg')}}" >
+      <img src="{{ asset('imgs/slide2.jpg')}}" >
+      <img src="{{ asset('imgs/slide3.jpg')}}" >
+      <img src="{{ asset('imgs/slide2.jpg')}}" >
+    </div>
+</div> -->
+<div id="sliderFrame">
+    <div id="slider">
+        <a href="http://www.gobi.mn/" target="_blank">
+            <img src="{{ asset('imgs/slide1.jpg')}}" alt="Welcome to Gobi Cashmere" />
+        </a>
+        <img src="{{ asset('imgs/slide1.jpg')}}" />
+        <img src="{{ asset('imgs/slide2.jpg')}}" alt="" />
+        <img src="{{ asset('imgs/slide3.jpg')}}" alt="#htmlcaption" />
+        <img src="{{ asset('imgs/slide2.jpg')}}" />
+    </div>
+    <div id="htmlcaption" style="display: none;">
+        <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
+    </div>
 </div>
 
 <!-- services_box -->
@@ -354,60 +369,60 @@
   
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/801/801/nature)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/white.jpg)"></div>
     
     <div class="tl-year">
-      <p class="f2 heading--sanSerif">2011</p>
+      <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1>Lorem ipsum dolor sit</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+      <h1>ЦАГААН НООЛУУР</h1>
+      <p>Цагаан өнгө нийт Монгол ямааны 20 хүртэлх хувийг эзэлдэг ажээ. Тэдний ихэнх нь Монголын өмнөд бүс болох Өмнөговь, Баянхонгор, Говь-Алтай аймгуудад байдаг. Монголын говьд эрс тэс уур амьсгал ноёрхдог бөгөөд өвөл -40oC, хэм хүрч зун +50oC хэм хүртэл халдаг байна. “Говь” ХК онцгойлон Баянхонгор аймгийн Шинэжинст сумаас цагаан ноолуурыг авдаг.</p>
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/802/802/nature)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/brown.jpg)"></div>
     
     <div class="tl-year">
-      <p class="f2 heading--sanSerif">2013</p>
+      <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
-      <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+      <h1 class="f3 text--accent ttu">БОР НООЛУУР</h1>
+      <p>Монголын баруун хэсгээр Алтайн нуруунд оршдог. Баян-Өлгий, Ховд, Завхан, Хөвсгөл аймгууд бор өнгийн ноолуурыг гаргадаг хар зүсмийн ямааны нутаг юм. Алтай Хангайн бүс далайгаас 2,000 – 4,000м өндөрлөгт оршдог бөгөөд асар хүйтэн болдог. Гэвч үслэг зөөлөн ноолуур энэ тэсгэм хүйтэн өвлөөр ч ямааг хүйтнээс бүрэн хамгаалж байдаг юм. Жил бүрийн 3-р сард “Говь” ХК Хөвсгөл аймгийн Төмөрбулаг сумаар айлчилж, бор өнгийн ноолуурыг шилэн авдаг билээ.</p>
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/803/803/nature)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/grey.jpg)"></div>
     
     <div class="tl-year">
-      <p class="f2 heading--sanSerif">2014</p>
+      <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
-      <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+      <h1 class="f3 text--accent ttu">ХӨХ СААРАЛ НООЛУУР</h1>
+      <p>Дэлхийн хамгийн ховор ноолуурын өнгө бол хөх саарал. Хөх саарал өнгийн ямаа зөвхөн Монголд байдаг бөгөөд Монгол ямааны ердөө 2 хувийг эзэлдэг. Энэ нь дэлхий дээрх 2,000 ямаа тутмын нэг л хөх саарал өнгөтэй байдаг гэсэн үг юм. “Говь” ХК-ийн байгалийн хамгийн ховор бөгөөд онцгой ноолуурыг үйлчлүүлэгчиддээ түгээх зорилго, энэхүү содон ноолуурыг хайж олоход хүргэсэн билээ. Хөх саарал өнгийн энэ ноолуурыг зөвхөн “Говь” ХК боловсруулан, бүтээгдэхүүн болгон үйлдвэрлэдэг бөгөөд Ховд аймгаас тусгайлан хөх саарал өнгийн ноолуурыг авдаг.</p>
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(https://placeimg.com/800/800/nature)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/beige.jpg)"></div>
     
     <div class="tl-year">
-      <p class="f2 heading--sanSerif">2016</p>
+      <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
-      <p>Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.</p>
+      <h1 class="f3 text--accent ttu">ЦАЙВАР ШАРГАЛ НООЛУУР</h1>
+      <p>Цайвар шаргал өнгө хамгийн элбэг байдаг. Монголын ямааны бараг 60 хувийг эзлэх энэ өнгө мөн бүх аймгаар тархсан байдаг. Дулаан, тансаг харагдах цайвар шаргал өнгө органик ноолуурын хамгийн тохиромжтой төлөөлөл юм. Хэнтий аймгийн Галшар сумын малчидтай “Говь” ХК тусгайлан харилцан ажиллаж, цайвар шаргал ноолуурыг боловсруулдаг байна.</p>
     </div>
 
   </div>
@@ -456,19 +471,6 @@
         });
     </script>
 <script>
-var myIndex = 0;
-carousel();
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 2500);    
-}
 </script>
 @endsection

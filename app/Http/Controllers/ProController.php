@@ -8,6 +8,11 @@ class ProController extends Controller
 {
     public function index()
     {
+    	return view('contents.items');
+    }
+    
+    public function items()
+    {
     	return view('contents.products');
     }
 }

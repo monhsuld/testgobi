@@ -17,45 +17,31 @@
               </div>
               <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#!">Бүтээгдэхүүн <i class="fa fa-angle-down"></i></a>
+                  <li style="background-color: #F6DDCC"><a href="#">Gobi now</a></li>
+                  <!-- <li class="dropdown "><a href="#">Брэнд <i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu">
-                      <li><a href="{{ url('products') }}">Эрэгтэй</a></li>
-                      <li><a href="{{ url('products') }}">Эмэгтэй</a></li>
-                      <li><a href="{{ url('products') }}">Yama</a></li>
-                      <li><a href="{{ url('products') }}">index 4</a></li>
-                      <li><a href="{{ url('products') }}">index 5</a></li>
-                      <li><a href="{{ url('products') }}">index 6</a></li>
-                      <li><a href="{{ url('products') }}">index 7</a></li>
-                      <li><a href="{{ url('products') }}">index 8</a></li>
-                      
-                      
-                    </ul>
-                  </li>
-                  <li><a class="smoth-scroll" href="{{ url('about')}}">Бидний тухай</a> </li>
-                  <li class="dropdown "><a href="#">Урамшуулал <i class="fa fa-angle-down"></i></a>
-                    <ul class="sub-menu">
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Cube Portfolio <i class="fa fa-angle-right"></i></a>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Yama <i class="fa fa-angle-right"></i></a>
                         <ul class="sub-menu">
                           <li><a href=""> Juicy Projects</a></li>
                           <li><a href=""> Full Width</a></li>
                           <li><a href=""> Masonry</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Grid Text Boxed <i class="fa fa-angle-right"></i></a>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Gobi <i class="fa fa-angle-right"></i></a>
                         <ul class="sub-menu">
                           <li><a href=""> 2 Columns</a></li>
                           <li><a href=""> 3 Columns</a></li>
                           <li><a href=""> 4 Columns</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Grid Boxed <i class="fa fa-angle-right"></i></a>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Organic <i class="fa fa-angle-right"></i></a>
                         <ul class="sub-menu">
                           <li><a href="">2 Columns</a></li>
                           <li><a href="">3 Columns</a></li>
                           <li><a href="">4 Columns</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">No space Full width <i class="fa fa-angle-right"></i></a>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Kids <i class="fa fa-angle-right"></i></a>
                         <ul class="sub-menu">
                           <li><a href="">2 columns</a></li>
                           <li><a href="">3 columns</a></li>
@@ -63,38 +49,54 @@
                           <li><a href="">5 columns</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">No Space Boxed <i class="fa fa-angle-right"></i></a>
+                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Home <i class="fa fa-angle-right"></i></a>
                         <ul class="sub-menu">
                           <li><a href=""> 2 Columns</a></li>
                           <li><a href=""> 3 Columns</a></li>
                           <li><a href=""> 4 Columns</a></li>
                         </ul>
                       </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Portfolio Masonry <i class="fa fa-angle-right"></i></a>
-                        <ul class="sub-menu">
-                          <li><a href=""> 3 Columns</a></li>
-                          <li><a href=""> 4 Columns</a></li>
-                          <li><a href=""> Full Width</a></li>
-                        </ul>
-                      </li>
-                      <li class="dropdown-submenu"> <a tabindex="-1" href="#">Portfolio Items <i class="fa fa-angle-right"></i></a>
-                        <ul class="sub-menu">
-                          <li><a href="">Single item</a></li>
-                          <li><a href="">Single item 2</a></li>
-                        </ul>
-                      </li>
+                    </ul>
+                  </li> -->
+                  <li><a href="#!">Эрэгтэй <i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      @foreach($male as $man)
+                      <li><a href="{{ url('products') }}">{{ $man->name }}</a></li>
+                      @endforeach
                     </ul>
                   </li>
-                  
-                  <li><a href="#!">Үйлчилгээ <i class="fa fa-angle-down"></i></a>
+                  <li><a href="#!">Эмэгтэй <i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      @foreach($fmale as $woman)
+                      <li><a href="{{ url('products') }}">{{ $woman->name }}</a></li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li><a href="#!">Гэр ахуй <i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      @foreach($home as $ger)
+                      <li><a href="{{ url('products') }}">{{ $ger->name }}</a></li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li><a href="#!">АКСЕССУАР <i class="fa fa-angle-down"></i></a>
+                    <ul class="sub-menu">
+                      @foreach($acc as $ac)
+                      <li><a href="{{ url('products') }}">{{ $ac->name }}</a></li>
+                      @endforeach
+                    </ul>
+                  </li>
+                  <li><a href="{{ url('magazine') }}">Говь сэтгүүл</a></li>
+                  <!-- <li><a href="#!" id="click">Follow</a></li> -->
+                  <!-- <li><a href="#!">Үйлчилгээ <i class="fa fa-angle-down"></i></a>
                     <ul class="sub-menu">
                       <li><a href="">Хувь захиалга</a></li>
                       <li><a href="">Принтинг</a> </li>
                       <li><a href="">Хими цэвэрлэгээ</a></li>
                       <li><a href="">Нөхөн засвар</a></li>
                     </ul>
-                  </li>
-                  <li><a href="{{ url('contact') }}">Холбоо барих</a> </li>
+                  </li> -->
+                  <!-- <li><a href="{{ url('contact') }}">Холбоо барих</a> </li> -->
                 </ul>
               </div>
             </div>

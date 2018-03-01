@@ -1,130 +1,8 @@
 @extends('welcome')
 @section('styles')
-    <link href="{{ asset('themes/1/js-image-slider.css') }}" rel="stylesheet" type="text/css" />
-    <script src="{{ asset('themes/1/js-image-slider.js') }}" type="text/javascript"></script>
-<style type="text/css">
-    .img-replace {
-      /* replace text with an image */
-      display: inline-block;
-      overflow: hidden;
-      text-indent: 100%; 
-      color: transparent;
-      white-space: nowrap;
-    }
-    .bts-popup {
-      position: fixed;
-      left: 0;
-      top: 0;
-      height: 100%;
-      width: 100%;
-      /*background-color: rgba(0, 0, 0, 0.5);*/
-      opacity: 0;
-      visibility: hidden;
-      -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-      -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
-      transition: opacity 0.3s 0s, visibility 0s 0.3s;
-    }
-    .bts-popup.is-visible {
-      opacity: 1;
-      visibility: visible;
-      -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
-      -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
-      transition: opacity 0.3s 0s, visibility 0s 0s;
-    }
+    <link href="{{ asset('js/1/ninja-slider.css') }}" rel="stylesheet" type="text/css" />
+    <script src="{{ asset('js/1/ninja-slider.js') }}" type="text/javascript"></script>
 
-    .bts-popup-container {
-      position: relative;
-      width: 100%;
-      max-width: 600px;
-      margin: 4em auto;
-      background: #333;
-      border-radius: none; 
-      text-align: center;
-      box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-      -webkit-transform: translateY(-40px);
-      -moz-transform: translateY(-40px);
-      -ms-transform: translateY(-40px);
-      -o-transform: translateY(-40px);
-      transform: translateY(-40px);
-      /* Force Hardware Acceleration in WebKit */
-      -webkit-backface-visibility: hidden;
-      -webkit-transition-property: -webkit-transform;
-      -moz-transition-property: -moz-transform;
-      transition-property: transform;
-      -webkit-transition-duration: 0.3s;
-      -moz-transition-duration: 0.3s;
-      transition-duration: 0.3s;
-    }
-    .bts-popup-container img {
-      /*padding: 20px 0 0 0;*/
-    }
-    .bts-popup-container p {
-        color: white;
-      padding: 10px 40px;
-    }
-    .bts-popup-container .bts-popup-button {
-      padding: 5px 25px;
-      border: 2px solid white;
-        display: inline-block;
-      margin-bottom: 10px;
-    }
-
-    .bts-popup-container a {
-      color: white;
-      text-decoration: none;
-      text-transform: uppercase;
-    }
-
-
-
-
-
-
-    .bts-popup-container .bts-popup-close {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      width: 30px;
-      height: 30px;
-    }
-    .bts-popup-container .bts-popup-close::before, .bts-popup-container .bts-popup-close::after {
-      content: '';
-      position: absolute;
-      top: 12px;
-      width: 16px;
-      height: 3px;
-      background-color: white;
-    }
-    .bts-popup-container .bts-popup-close::before {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg);
-      left: 8px;
-    }
-    .bts-popup-container .bts-popup-close::after {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg);
-      right: 6px;
-      top: 13px;
-    }
-    .is-visible .bts-popup-container {
-      -webkit-transform: translateY(0);
-      -moz-transform: translateY(0);
-      -ms-transform: translateY(0);
-      -o-transform: translateY(0);
-      transform: translateY(0);
-    }
-    @media only screen and (min-width: 1170px) {
-      .bts-popup-container {
-        margin: 8em auto;
-      }
-    }
-</style>
 <style type="text/css">
     body {
   font-family: 'Source Sans Pro',Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -136,7 +14,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #031625;
+  /*background-color: #fff;*/
 }
 #timeline:hover .tl-item {
   width: 23.3333%;
@@ -147,8 +25,8 @@
           transform: translate3d(0, 0, 0);
   position: relative;
   width: 25%;
-  height: 70vh;
-  min-height: 400px;
+  height: 250px;
+  min-height: 200px;
   color: #fff;
   overflow: hidden;
   -webkit-transition: width 0.5s ease;
@@ -165,14 +43,14 @@
   height: 100%;
 }
 .tl-item:after {
-  background: rgba(3, 22, 37, 0.85);
+  background: rgba(192,192,192,0.3);
   opacity: 1;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
 .tl-item:before {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(95%, black));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 95%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 100%, black 100%);
   z-index: 1;
   opacity: 0;
   -webkit-transform: translate3d(0, 0, 0) translateY(50%);
@@ -222,9 +100,11 @@
 .tl-content h1 {
   font-family: 'Pathway Gothic One',Helvetica Neue,Helvetica,Arial,sans-serif;
   text-transform: uppercase;
-  color: #1779cf;
-  font-size: 1.44rem;
+  margin-top: 90px;
+  color: #333;
+  font-size: 12px;
   font-weight: normal;
+  text-align: right;
 }
 
 .tl-year {
@@ -251,7 +131,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center center;
   -webkit-transition: -webkit-filter 0.5s ease;
   transition: -webkit-filter 0.5s ease;
@@ -273,156 +154,84 @@
       <img src="{{ asset('imgs/slide2.jpg')}}" >
     </div>
 </div> -->
-<div id="sliderFrame">
-    <div id="slider">
-        <a href="http://www.gobi.mn/" target="_blank">
-            <img src="{{ asset('imgs/slide1.jpg')}}" alt="Welcome to Gobi Cashmere" />
-        </a>
-        <img src="{{ asset('imgs/slide1.jpg')}}" />
-        <img src="{{ asset('imgs/slide2.jpg')}}" alt="" />
-        <img src="{{ asset('imgs/slide3.jpg')}}" alt="#htmlcaption" />
-        <img src="{{ asset('imgs/slide2.jpg')}}" />
-    </div>
-    <div id="htmlcaption" style="display: none;">
-        <em>HTML</em> caption. Link to <a href="http://www.google.com/">Google</a>.
-    </div>
-</div>
-
-<!-- services_box -->
-<section class="padding ptb-xs-40 gray-bg">
-    <div class="container">
-        <div class="row text-center">
-                  <div class="col-sm-8 col-sm-push-2 col-md-6 col-md-push-3 mb-30">
-                     <div class="heading-box pb-15">
-                        <h2>Үйлчилгээ</h2>
-                        <span class="b-line"></span>
-                     </div>
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.</p>
-                  </div>
-               </div>
-        
-        <div class="row">
-            <div class="col-md-6 col-lg-3 mb-30 mb-xs-30">
-                        <div class="wedo-point d-flex align-items-center">
-                            <div class="icon-serv">
-                            <i class="fa fa-laptop" aria-hidden="true"></i>
-                            </div>
-                            <div class="serv-poin">
-                                <h3><a href="#!">Хувь захиалга</a></h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-lg-3 mb-30 mb-xs-30">
-                        <div class="wedo-point d-flex align-items-center">
-                            <div class="icon-serv">
-                            <i class="fa fa-camera-retro" aria-hidden="true"></i>
-                            </div>
-                            <div class="serv-poin">
-                                <h3><a href="#!">Принтинг</a></h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-6 col-lg-3 mb-30 mb-xs-30">
-                        <div class="wedo-point d-flex align-items-center">
-                            <div class="icon-serv">
-                            <i class="fa fa-suitcase" aria-hidden="true"></i>
-                            </div>
-                            <div class="serv-poin">
-                                <h3><a href="#!">Хими </a></h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="col-md-6 col-lg-3 mb-30 mb-xs-30">
-                        <div class="wedo-point d-flex align-items-center">
-                            <div class="icon-serv">
-                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                            </div>
-                            <div class="serv-poin">
-                                <h3><a href="#!">Нөхөн засвар</a></h3>
-                                <p>
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                                </p>
-                            </div>
-                        </div>
-                    </div>                    
-                    
+<div class="container">
+    <div id="ninja-slider">
+        <div class="slider-inner">
+            <ul>
+                <li>
+                  <a class="ns-img" href="{{ asset('imgs/slide1.jpg')}}"></a>
+                </li>
+                <li>
+                  <a href="/"><img class="ns-img" src="{{ asset('imgs/slide2.jpg')}}" style="cursor:pointer;" /></a>
+                </li>
+                <li>
+                    <a class="ns-img" href="{{ asset('imgs/slide3.jpg')}}"></a>
+                    <div class="caption cap1">RESPONSIVE</div>
+                    <div class="caption cap1 cap2">TOUCH·FRIENDLY</div>
+                </li>
+            </ul>
+            <!-- <div class="fs-icon" title="Expand/Close"></div> -->
         </div>
     </div>
 
-</section>
-        <!--End Banner -->
 <section id="timeline">
   
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(imgs/white.jpg)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/logos/gobi.png)"></div>
     
     <div class="tl-year">
       <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1>ЦАГААН НООЛУУР</h1>
-      <p>Цагаан өнгө нийт Монгол ямааны 20 хүртэлх хувийг эзэлдэг ажээ. Тэдний ихэнх нь Монголын өмнөд бүс болох Өмнөговь, Баянхонгор, Говь-Алтай аймгуудад байдаг. Монголын говьд эрс тэс уур амьсгал ноёрхдог бөгөөд өвөл -40oC, хэм хүрч зун +50oC хэм хүртэл халдаг байна. “Говь” ХК онцгойлон Баянхонгор аймгийн Шинэжинст сумаас цагаан ноолуурыг авдаг.</p>
+      <a href="#"><h1>Дэлгэрэнгүй <i class="fa fa-angle-right"></i></h1></a>
+      <!-- <p>Цагаан өнгө нийт Монгол ямааны 20 хүртэлх хувийг эзэлдэг ажээ. Тэдний ихэнх нь Монголын өмнөд бүс болох Өмнөговь, Баянхонгор, Говь-Алтай аймгуудад байдаг. Монголын говьд эрс тэс уур амьсгал ноёрхдог бөгөөд өвөл -40oC, хэм хүрч зун +50oC хэм хүртэл халдаг байна. “Говь” ХК онцгойлон Баянхонгор аймгийн Шинэжинст сумаас цагаан ноолуурыг авдаг.</p> -->
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(imgs/brown.jpg)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/logos/yama.png)"></div>
     
     <div class="tl-year">
       <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">БОР НООЛУУР</h1>
-      <p>Монголын баруун хэсгээр Алтайн нуруунд оршдог. Баян-Өлгий, Ховд, Завхан, Хөвсгөл аймгууд бор өнгийн ноолуурыг гаргадаг хар зүсмийн ямааны нутаг юм. Алтай Хангайн бүс далайгаас 2,000 – 4,000м өндөрлөгт оршдог бөгөөд асар хүйтэн болдог. Гэвч үслэг зөөлөн ноолуур энэ тэсгэм хүйтэн өвлөөр ч ямааг хүйтнээс бүрэн хамгаалж байдаг юм. Жил бүрийн 3-р сард “Говь” ХК Хөвсгөл аймгийн Төмөрбулаг сумаар айлчилж, бор өнгийн ноолуурыг шилэн авдаг билээ.</p>
+      <a href="#"><h1>Дэлгэрэнгүй <i class="fa fa-angle-right"></i></h1></a>
+      <!-- <p>Монголын баруун хэсгээр Алтайн нуруунд оршдог. Баян-Өлгий, Ховд, Завхан, Хөвсгөл аймгууд бор өнгийн ноолуурыг гаргадаг хар зүсмийн ямааны нутаг юм. Алтай Хангайн бүс далайгаас 2,000 – 4,000м өндөрлөгт оршдог бөгөөд асар хүйтэн болдог. Гэвч үслэг зөөлөн ноолуур энэ тэсгэм хүйтэн өвлөөр ч ямааг хүйтнээс бүрэн хамгаалж байдаг юм. Жил бүрийн 3-р сард “Говь” ХК Хөвсгөл аймгийн Төмөрбулаг сумаар айлчилж, бор өнгийн ноолуурыг шилэн авдаг билээ.</p> -->
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(imgs/grey.jpg)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/logos/organic.png)"></div>
     
     <div class="tl-year">
       <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">ХӨХ СААРАЛ НООЛУУР</h1>
-      <p>Дэлхийн хамгийн ховор ноолуурын өнгө бол хөх саарал. Хөх саарал өнгийн ямаа зөвхөн Монголд байдаг бөгөөд Монгол ямааны ердөө 2 хувийг эзэлдэг. Энэ нь дэлхий дээрх 2,000 ямаа тутмын нэг л хөх саарал өнгөтэй байдаг гэсэн үг юм. “Говь” ХК-ийн байгалийн хамгийн ховор бөгөөд онцгой ноолуурыг үйлчлүүлэгчиддээ түгээх зорилго, энэхүү содон ноолуурыг хайж олоход хүргэсэн билээ. Хөх саарал өнгийн энэ ноолуурыг зөвхөн “Говь” ХК боловсруулан, бүтээгдэхүүн болгон үйлдвэрлэдэг бөгөөд Ховд аймгаас тусгайлан хөх саарал өнгийн ноолуурыг авдаг.</p>
+      <a href="#"><h1>Дэлгэрэнгүй <i class="fa fa-angle-right"></i></h1></a>
+      <!-- <p>Дэлхийн хамгийн ховор ноолуурын өнгө бол хөх саарал. Хөх саарал өнгийн ямаа зөвхөн Монголд байдаг бөгөөд Монгол ямааны ердөө 2 хувийг эзэлдэг. Энэ нь дэлхий дээрх 2,000 ямаа тутмын нэг л хөх саарал өнгөтэй байдаг гэсэн үг юм. “Говь” ХК-ийн байгалийн хамгийн ховор бөгөөд онцгой ноолуурыг үйлчлүүлэгчиддээ түгээх зорилго, энэхүү содон ноолуурыг хайж олоход хүргэсэн билээ. Хөх саарал өнгийн энэ ноолуурыг зөвхөн “Говь” ХК боловсруулан, бүтээгдэхүүн болгон үйлдвэрлэдэг бөгөөд Ховд аймгаас тусгайлан хөх саарал өнгийн ноолуурыг авдаг.</p> -->
     </div>
 
   </div>
 
   <div class="tl-item">
     
-    <div class="tl-bg" style="background-image: url(imgs/beige.jpg)"></div>
+    <div class="tl-bg" style="background-image: url(imgs/logos/kids.png)"></div>
     
     <div class="tl-year">
       <p class="f2 heading--sanSerif"></p>
     </div>
 
     <div class="tl-content">
-      <h1 class="f3 text--accent ttu">ЦАЙВАР ШАРГАЛ НООЛУУР</h1>
-      <p>Цайвар шаргал өнгө хамгийн элбэг байдаг. Монголын ямааны бараг 60 хувийг эзлэх энэ өнгө мөн бүх аймгаар тархсан байдаг. Дулаан, тансаг харагдах цайвар шаргал өнгө органик ноолуурын хамгийн тохиромжтой төлөөлөл юм. Хэнтий аймгийн Галшар сумын малчидтай “Говь” ХК тусгайлан харилцан ажиллаж, цайвар шаргал ноолуурыг боловсруулдаг байна.</p>
+      <a href="#"><h1>Дэлгэрэнгүй <i class="fa fa-angle-right"></i></h1></a>
+      <!-- <p>Цайвар шаргал өнгө хамгийн элбэг байдаг. Монголын ямааны бараг 60 хувийг эзлэх энэ өнгө мөн бүх аймгаар тархсан байдаг. Дулаан, тансаг харагдах цайвар шаргал өнгө органик ноолуурын хамгийн тохиромжтой төлөөлөл юм. Хэнтий аймгийн Галшар сумын малчидтай “Говь” ХК тусгайлан харилцан ажиллаж, цайвар шаргал ноолуурыг боловсруулдаг байна.</p> -->
     </div>
 
   </div>
@@ -430,16 +239,8 @@
 
 <!--Portfolio Section End-->
 
-    <div class="bts-popup" role="alert">
-        <div class="bts-popup-container">
-          <img src="{{ asset('imgs/gobisale.jpg') }}" alt="" width="100%" />
-            <p>Цахим хаяг аа бүртгүүлээд шинэ мэдээлэл болон 10% хөнглөлт аваарай. </p>
-                    <div class="bts-popup-button">
-                           <input type="text" class="form-control" placeholder="цахим хаяг аа оруулна уу" aria-label="Recipient's username" aria-describedby="basic-addon2"><a href="#0">Enter</a>
-                    </div>
-            <a href="#0" class="bts-popup-close img-replace">Close</a>
-        </div>
-    </div>
+<!-- <iframe frameborder='0'  width='100%' height='100%'  title='fallwinter 2017-18' src='{{asset("fallwinter 2017-18 LAST/index.html")}}' type='text/html' allowfullscreen='true' scrolling='no' marginwidth='0' marginheight='0'></iframe> -->
+</div>
 @endsection
 @section('scripts')
     <script type="text/javascript">

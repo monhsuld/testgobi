@@ -27,6 +27,6 @@ class Promotions extends Migration
      */
     public function down()
     {
-        Schema::rollback('promotions');
+        Schema::dropIfExists('promotions');
     }
 }

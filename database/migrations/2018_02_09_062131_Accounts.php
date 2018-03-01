@@ -33,6 +33,6 @@ class Accounts extends Migration
      */
     public function down()
     {
-        Schema::rollback('accounts');
+        Schema::dropIfExists('accounts');
     }
 }

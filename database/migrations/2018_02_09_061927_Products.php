@@ -20,6 +20,8 @@ class Products extends Migration
             $table->integer('price');
             $table->string('name');
             $table->string('color');
+            $table->string('styleno');
+            $table->string('pics');
             $table->timestamps();
         });
     }
@@ -31,6 +33,6 @@ class Products extends Migration
      */
     public function down()
     {
-        Schema::rollback('products');
+        Schema::dropIfExists('products');
     }
 }

@@ -3,7 +3,6 @@
 <!--About Section--> 
 <div class="page-header">
             <div class="container">
-                <h1 class="title">Холбоо барих</h1>
             </div>
             <div class="breadcrumb-box">
                 <div class="container">
@@ -21,7 +20,10 @@
 <section class="padding ptb-xs-40 contact-form__block">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12 text-center">
+			
+			@include('contents.sidebar')
+
+			<div class="col-md-10 text-center">
 				<div class="headeing pb-20 mb-30">
 					<h2>Keep in Touch</h2>
 					<span class="b-line"></span>
@@ -46,12 +48,13 @@
 						<i class="ion-ios-email icon-circle pos-s"></i><a href="mailto:business@support.com"  class="mt-15 i-block">marketing@gobi.mn</a>
 					</div>
 				</div>
-			</div>
+			
 			<!-- Map Section -->
 			<div id="overlay" class="col-md-12">
 			    <iframe src="https://www.google.com/maps/d/embed?mid=1LLdaTCHj2mH8OJTejevn4k2eO3WzTp19" width="100%"  height="480"></iframe>
 			</div>
 			<!-- Map Section -->
+			</div>
 		</div>
 	</div>
 

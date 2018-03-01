@@ -21,5 +21,27 @@
 <!-- Carousel Js --> 
 <script src="{{ asset('js/owl.carousel.min.js') }}" type="text/javascript"></script> 
 <!-- custom Js --> 
-<!-- <script src="{{ asset('js/custom.js') }}" type="text/javascript"></script> -->
+<script src="{{ asset('js/custom.js') }}" type="text/javascript"></script>
 <script src="{{ asset('js/isotope-custom.js') }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		  $('.nav-toggle').click(function(){
+			//get collapse content selector
+			var collapse_content_selector = $(this).attr('href');
+
+			//make the collapse content to be shown or hide
+			var toggle_switch = $(this);
+			$(collapse_content_selector).toggle(function(){
+			  if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+				toggle_switch.html('NewsLetter');
+			  }else{
+                                //change the button label to be 'Hide'
+				toggle_switch.html('x');
+			  }
+			});
+		  });
+
+		});
+</script>

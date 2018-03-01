@@ -7,6 +7,7 @@
 
     <!-- Favicone Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('imgs/favicon.png') }}">
+
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -23,4 +24,26 @@
     <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
     
     <style type="text/css">.fancybox-margin{margin-right:17px;}</style>
+    <style type="text/css">
+        .round-border {
+            width:100%;
+            padding: 0px;
+            background: #F6DDCC;
+            color:#222;
+            text-shadow: 0px 1px 2px #555;
+            bottom: 0px;
+            left:0px;
+            position:fixed;
+            z-index: 4;
+        }
+
+        .right {
+            font-size: 12px;
+            text-align:right;
+        }
+        .btnpop{
+            background: #F6DDCC;
+            color: #fff;
+        }
+    </style>
 </head>

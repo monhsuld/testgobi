@@ -20,20 +20,22 @@
     @include('layouts.menuheader')
 
 
-    @section('home')
+    <!-- @section('home') -->
 
-    @show
+    <!-- @show -->
 <!--Portfolio Section-->
     @yield('content')
 <!-- Service_box End-->
     @include('layouts.footer')
 
-<div class="goto goto-active">
+<!-- <div class="goto goto-active">
     <a href="#!"><i class="fa fa-angle-up"></i></a>
-</div>
+</div> -->
 
     @include('layouts.scripts')
     @yield('scripts')
+            
 
-
-<style type="text/css">.typewrite > .wrap { border-right: 0.02em solid #fff}</style></body></html>
+<style type="text/css">.typewrite > .wrap { border-right: 0.02em solid #fff}</style>
+</body>
+</html>

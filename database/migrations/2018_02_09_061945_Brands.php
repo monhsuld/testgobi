@@ -16,7 +16,6 @@ class Brands extends Migration
         Schema::create('brands', function (Blueprint $table) {
             $table->increments('brand_id');
             $table->string('name');
-            $table->string('code');
             $table->timestamps();
         });    }
 
@@ -27,6 +26,6 @@ class Brands extends Migration
      */
     public function down()
     {
-        Schema::rollback('brands');
+        Schema::dropIfExists('brands');
     }
 }

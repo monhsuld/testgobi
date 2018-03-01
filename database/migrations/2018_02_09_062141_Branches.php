@@ -29,6 +29,6 @@ class Branches extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('branches');
     }
 }
